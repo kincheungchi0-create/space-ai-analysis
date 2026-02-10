@@ -854,6 +854,7 @@ h1 {
     color: var(--accent-color);
 }
 
+/* TCO Footer */
 .tco-footer {
     margin-top: 3rem;
     padding-top: 2rem;
@@ -861,6 +862,54 @@ h1 {
     text-align: center;
     font-size: 0.95rem;
     color: #cbd5e1;
+}
+
+/* O&M Deep Dive */
+.om-deep-dive {
+    margin-top: 5rem;
+    padding-top: 4rem;
+    border-top: 1px solid var(--glass-border);
+}
+
+.om-deep-dive h3 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.om-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    text-align: center;
+}
+
+.om-card i {
+    width: 60px;
+    height: 60px;
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--primary-color);
+    border-radius: 50%;
+    padding: 15px;
+    margin-bottom: 2rem;
+}
+
+.om-card h4 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.om-card p {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.om-card .detail {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    display: block;
+    line-height: 1.5;
 }
 
 /* Footer */
