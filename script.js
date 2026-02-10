@@ -85,6 +85,54 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // 5-Year TCO Cumulative Cost Line Chart
+    const lineCtx = document.getElementById('tcoLineChart').getContext('2d');
+    new Chart(lineCtx, {
+        type: 'line',
+        data: {
+            labels: ['第0年', '第1年', '第2年', '第3年', '第4年', '第5年'],
+            datasets: [
+                {
+                    label: '地表方案成本 (累積)',
+                    data: [4.5, 5.5, 6.5, 7.5, 8.5, 9.5], // CapEx $4.5B + $1B/yr
+                    borderColor: '#ef4444',
+                    backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                    fill: true,
+                    tension: 0.3
+                },
+                {
+                    label: '太空方案成本 (累積)',
+                    data: [5.0, 5.0, 5.0, 5.0, 5.0, 5.0], // 一次性 $5B (CapEx $4B + Launch $1B), 電費 $0
+                    borderColor: '#10b981',
+                    backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                    fill: true,
+                    tension: 0.3
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: true,
+                    labels: { color: '#94a3b8', font: { size: 12 } }
+                }
+            },
+            scales: {
+                y: {
+                    title: { display: true, text: '十億美金 ($ Billion)', color: '#94a3b8' },
+                    grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                    ticks: { color: '#94a3b8' }
+                },
+                x: {
+                    grid: { display: false },
+                    ticks: { color: '#94a3b8' }
+                }
+            }
+        }
+    });
+
     // Efficiency Gauge Chart (Semi-circle)
     const gaugeCtx = document.getElementById('efficiencyGauge').getContext('2d');
     new Chart(gaugeCtx, {

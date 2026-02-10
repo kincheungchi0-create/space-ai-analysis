@@ -164,28 +164,36 @@
                     <p class="meter-info">根據最新分析：若節省電力每年達 $1B，而發射成本為一次性，太空 AI 在 5 年內具有顯著的經濟競爭力。</p>
                 </div>
 
-                <div class="stats-comparison">
-                    <div class="comp-card">
-                        <div class="comp-label">地表數據中心 (100k GPU 規模)</div>
-                        <div class="comp-rows">
-                            <div class="comp-row"><span>5 年電力總支出</span> <span class="red">$5B</span></div>
-                            <div class="comp-row"><span>晶片硬體 (固定成本)</span> <span>$4B</span></div>
-                            <div class="comp-row"><span>土地與運維 (固定成本)</span> <span class="red">$0.5B</span></div>
-                            <div class="comp-divider"></div>
-                            <div class="comp-row total"><span>5 年 TCO 總計</span> <span class="red">$9.5B</span></div>
-                        </div>
-                    </div>
-                    <div class="comp-card highlighted">
-                        <div class="comp-label">太空 AI 陣列 (100k GPU 規模)</div>
-                        <div class="comp-rows">
-                            <div class="comp-row"><span>5 年電力總支出</span> <span class="green">$0</span></div>
-                            <div class="comp-row"><span>一次性發射成本</span> <span class="primary">$1B</span></div>
-                            <div class="comp-row"><span>晶片硬體 (固定成本)</span> <span>$4B</span></div>
-                            <div class="comp-divider"></div>
-                            <div class="comp-row total"><span>5 年 TCO 總計</span> <span class="green">$5B</span></div>
-                        </div>
+                <div class="chart-box">
+                    <h3>5 年累計成本增長對比 (Cumulative TCO)</h3>
+                    <div class="line-chart-container">
+                        <canvas id="tcoLineChart"></canvas>
                     </div>
                 </div>
+            </div>
+
+            <div class="stats-comparison">
+                <div class="comp-card">
+                    <div class="comp-label">地表數據中心 (100k GPU 規模)</div>
+                    <div class="comp-rows">
+                        <div class="comp-row"><span>5 年電力總支出</span> <span class="red">$5B</span></div>
+                        <div class="comp-row"><span>晶片硬體 (固定成本)</span> <span>$4B</span></div>
+                        <div class="comp-row"><span>土地與運維 (固定成本)</span> <span class="red">$0.5B</span></div>
+                        <div class="comp-divider"></div>
+                        <div class="comp-row total"><span>5 年 TCO 總計</span> <span class="red">$9.5B</span></div>
+                    </div>
+                </div>
+                <div class="comp-card highlighted">
+                    <div class="comp-label">太空 AI 陣列 (100k GPU 規模)</div>
+                    <div class="comp-rows">
+                        <div class="comp-row"><span>5 年電力總支出</span> <span class="green">$0</span></div>
+                        <div class="comp-row"><span>一次性發射成本</span> <span class="primary">$1B</span></div>
+                        <div class="comp-row"><span>晶片硬體 (固定成本)</span> <span>$4B</span></div>
+                        <div class="comp-divider"></div>
+                        <div class="comp-row total"><span>5 年 TCO 總計</span> <span class="green">$5B</span></div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
 
