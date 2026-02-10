@@ -189,6 +189,86 @@
             </div>
         </section>
 
+        <section id="deep-dive" class="content-wrapper">
+            <h2 class="section-title text-center">深度技術拆解：物理規律的無情限制</h2>
+
+            <div class="detail-grid">
+                <div class="detail-item">
+                    <div class="icon-wrap"><i data-lucide="waves"></i></div>
+                    <h3>真空散熱：熱力學的枷鎖</h3>
+                    <p>在地球上，數據中心靠空氣或液體<strong>對流</strong>散熱。但在太空中，真空無法傳導熱量。唯一的散熱方式是<strong>紅外線輻射</strong>。</p>
+                    <ul class="sub-detail">
+                        <li><strong>輻射板規模：</strong> 部署一個 100MW 的太空中心需要超過 <strong>10 萬平方公尺</strong> 的超薄放射板。</li>
+                        <li><strong>脆弱性：</strong> 放射板必須極薄以減輕重量，這使其極易被微隕石或太空碎片擊穿。</li>
+                    </ul>
+                </div>
+
+                <div class="detail-item">
+                    <div class="icon-wrap"><i data-lucide="shield-alert"></i></div>
+                    <h3>位元翻轉 (Bit Flip)：無形的計算戰爭</h3>
+                    <p>宇宙射線包含高能質子與重離子。當它們擊中晶片，會發生 <strong>SEU (單次事件效應)</strong>。</p>
+                    <ul class="sub-detail">
+                        <li><strong>頻率：</strong> 在低軌道，未屏蔽晶片的錯誤率比地表高 <strong>10,000 倍</strong>。</li>
+                        <li><strong>代價：</strong> 為了解決錯誤，需要 <strong>三重模組冗餘 (TMR)</strong>，這意味著要用 3 個核心算一樣的東西來投票，效能直接打 33
+                            折。</li>
+                    </ul>
+                </div>
+
+                <div class="detail-item">
+                    <div class="icon-wrap"><i data-lucide="wrench"></i></div>
+                    <h3>「拋棄式」邏輯：維修成本無限大</h3>
+                    <p>目前沒有任何經濟可行的方法能派工程師去軌道更換壞掉的 H100 GPU。</p>
+                    <ul class="sub-detail">
+                        <li><strong>冗餘成本：</strong> 每個衛星必須攜帶額外 <strong>50% 的備用件</strong>。一旦發生連鎖故障，整顆衛星即淪為太空垃圾。</li>
+                        <li><strong>折舊速度：</strong> 衛星受大氣阻力影響，軌道維持成本（燃料）決定了其 5 年的生命上限。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="environmental-impact glass-section">
+                <h3>環境資產負債表：綠色能源 vs 軌道污染</h3>
+                <div class="grid-2">
+                    <div class="impact-stat">
+                        <div class="label">單次發射碳足跡 (Starship)</div>
+                        <div class="value">2,700 噸 CO2</div>
+                        <p>相當於地表數據中心運行 15 年的節電總量。</p>
+                    </div>
+                    <div class="impact-stat">
+                        <div class="label">凱斯勒現象風險</div>
+                        <div class="value">增長率 450%</div>
+                        <p>百萬級衛星部署將大幅增加軌道垃圾密度。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="latency-map glass-section">
+            <h3 class="text-center">訊號的長征：延遲 (Latency) 深度解析</h3>
+            <div class="latency-grid">
+                <div class="latency-box">
+                    <div class="orbit-type">地表邊緣運算</div>
+                    <div class="ms-value">5ms - 10ms</div>
+                    <p>極度低延遲，適合金融交易、自動駕駛。</p>
+                </div>
+                <div class="latency-box">
+                    <div class="orbit-type">低地球軌道 (LEO)</div>
+                    <div class="ms-value">30ms - 50ms</div>
+                    <p>訊號需往返大氣層，適合一般 AI 交互、翻譯。</p>
+                </div>
+                <div class="latency-box warning">
+                    <div class="orbit-type">同步軌道 (GEO)</div>
+                    <div class="ms-value">600ms+</div>
+                    <p>物理距離導致顯著遲滯，難以進行即時推理訓練。</p>
+                </div>
+            </div>
+            <div class="physics-note">
+                <i data-lucide="info"></i>
+                <strong>物理定律限制：</strong> 光速約 30 萬公里/秒。訊號從地表到 550km 的低軌道衛星往返一次至少需要 3.6ms，加上處理轉發與數據中心內部邏輯，50ms 是目前衛星 AI
+                運算的物理極限。
+            </div>
+        </div>
+        </section>
+
         <section id="tech-hurdles">
             <h2 class="section-title text-center">技術落地的三大高牆</h2>
             <div class="hurdle-grid">

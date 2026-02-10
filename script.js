@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    document.querySelectorAll('.cost-card, .hurdle-item, .glass-section, .comp-card').forEach(el => {
+    document.querySelectorAll('.cost-card, .hurdle-item, .glass-section, .comp-card, .detail-item, .impact-stat').forEach(el => {
         el.style.opacity = 0;
         el.style.transform = 'translateY(30px)';
         el.style.transition = 'all 0.6s ease-out';
