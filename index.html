@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>馬斯克太空 AI 伺服器深度分析：零電費背後的「天文」代價</title>
+    <meta name="description" content="深入分析馬斯克將 AI 伺服器部署於太空的計畫。雖然擁有零電費優勢，但發射成本、散熱難題、硬體壽命與軌道維護等潛在費用高達兆級美元。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="stars-container"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Orbital<span>AI</span></div>
+            <ul>
+                <li><a href="#vision">願景</a></li>
+                <li><a href="#costs">隱形費用</a></li>
+                <li><a href="#tech-hurdles">技術難關</a></li>
+                <li><a href="#analysis">數據分析</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <span class="tag">深度專題報告</span>
+                <h1>馬斯克太空 AI 伺服器：<br><span class="gradient-text">零電費，但代價為何？</span></h1>
+                <p>xAI 與 SpaceX 的世紀聯手：將運算力拋向太空，真的能解決能源危機嗎？我們拆解這項兆級美金計畫的每一個隱藏細節。</p>
+                <div class="cta-group">
+                    <a href="#costs" class="btn primary">探索隱形費用</a>
+                    <a href="#analysis" class="btn secondary">看數據分析</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="server-satellite">
+                    <div class="core">AI</div>
+                    <div class="rings">
+                        <div class="ring"></div>
+                        <div class="ring"></div>
+                        <div class="ring"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="glass-section">
+            <div class="content-wrapper">
+                <h2 class="section-title">核心願景：擺脫地表電力枷鎖</h2>
+                <div class="grid-2">
+                    <div class="text-block">
+                        <p>隨著 Llama 4、Grok 3 等大模型的出現，地表電力供應已成為 AI 發展的瓶頸。馬斯克的提議核心在於：</p>
+                        <ul class="feature-list">
+                            <li><i data-lucide="sun"></i> <strong>24/7 太陽能：</strong> 在低軌道幾乎無間斷獲取太陽能。</li>
+                            <li><i data-lucide="zap"></i> <strong>零電費支出：</strong> 消除地表數據中心最龐大的運營開支。</li>
+                            <li><i data-lucide="earth"></i> <strong>環保綠能：</strong> 減少對化石燃料電網的依賴。</li>
+                        </ul>
+                    </div>
+                    <div class="info-card info-green">
+                        <span class="card-icon"><i data-lucide="trending-down"></i></span>
+                        <h3>看似省下的成本</h3>
+                        <div class="cost-stat">-$1,000,000,000+</div>
+                        <p>每年估計可節省的全球地表電力費用</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="costs">
+            <h2 class="section-title text-center">五大隱形「天文」費用</h2>
+            <div class="grid-3">
+                <div class="cost-card">
+                    <div class="card-header">
+                        <i data-lucide="rocket"></i>
+                        <h3>發射與部署成本</h3>
+                    </div>
+                    <p>即便 Starship 能將成本降至 $200/kg，要部署足以支撐百萬核心的伺服器陣列，每年仍需數千次發射。</p>
+                    <div class="cost-tag">估計：每年 500-1000 億美金</div>
+                </div>
+                <div class="cost-card">
+                    <div class="card-header">
+                        <i data-lucide="cpu"></i>
+                        <h3>航太級硬體溢價</h3>
+                    </div>
+                    <p>伺服器必須經過「抗輻射」處理（Radiation Hardening），晶片造價是地表版本的 5-10 倍。</p>
+                    <div class="cost-tag">溢價：500% - 1000%</div>
+                </div>
+                <div class="cost-card">
+                    <div class="card-header">
+                        <i data-lucide="thermometer-snowflake"></i>
+                        <h3>真空散熱系統</h3>
+                    </div>
+                    <p>太空中沒有空氣對流。散熱需仰賴巨大的紅外線放射板，這會使衛星重量翻倍，成本直線上升。</p>
+                    <div class="cost-tag">複雜度：極高</div>
+                </div>
+                <div class="cost-card">
+                    <div class="card-header">
+                        <i data-lucide="refresh-cw"></i>
+                        <h3>短代更換週期</h3>
+                    </div>
+                    <p>低軌道衛星壽命僅 5 年左右。AI 晶片更新極快，這意味著每隔幾年就要「整批更換」。</p>
+                    <div class="cost-tag">折舊率：20% / 年</div>
+                </div>
+                <div class="cost-card">
+                    <div class="card-header">
+                        <i data-lucide="wifi"></i>
+                        <h3>星際通訊頻寬</h3>
+                    </div>
+                    <p>將海量數據傳回地表需要極高功率的雷射通訊，且延遲與抖動（Jitter）處理成本昂貴。</p>
+                    <div class="cost-tag">維護費：每年數十億美金</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="analysis" class="glass-section">
+            <h2 class="section-title">財務影響對比分析</h2>
+            <div class="grid-2">
+                <div class="chart-container">
+                    <canvas id="costChart"></canvas>
+                </div>
+                <div class="text-block">
+                    <h3>這是一場 2 兆美元的賭注</h3>
+                    <p>根據 MoffettNathanson 的分析，若要建立一個完整的「太空 AI 星鏈」，總年化投資可能高達 <strong>2 兆至 5 兆美金</strong>。</p>
+                    <div class="stat-box">
+                        <span class="label">地表 AI 中心 (佔比)</span>
+                        <div class="progress-bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                        <span class="value">電力成本佔大頭，基礎建設較低</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="label">太空 AI 中心 (佔比)</span>
+                        <div class="progress-bar">
+                            <div class="fill red" style="width: 95%;"></div>
+                        </div>
+                        <span class="value">零電費，但發射與硬體成本爆表</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="glass-section">
+            <h2 class="section-title text-center">費用效益儀表板 (Dashboard)</h2>
+            <div class="dashboard-grid">
+                <div class="meter-box">
+                    <h3>運作成本效率比</h3>
+                    <div class="gauge-wrapper">
+                        <canvas id="efficiencyGauge"></canvas>
+                        <div class="gauge-value">
+                            <span id="efficiencyPct">18</span>%
+                            <p>相較於地表效率</p>
+                        </div>
+                    </div>
+                    <p class="meter-info">儘管電力成本為 0，但極高的硬體維護與發射成本導致整體經濟效益仍低於地表。</p>
+                </div>
+
+                <div class="stats-comparison">
+                    <div class="comp-card">
+                        <div class="comp-label">地表數據中心 (100k GPU)</div>
+                        <div class="comp-rows">
+                            <div class="comp-row"><span>電力 (每年)</span> <span>$500M</span></div>
+                            <div class="comp-row"><span>硬體建設</span> <span>$2B</span></div>
+                            <div class="comp-row"><span>運維人員</span> <span>$100M</span></div>
+                            <div class="comp-divider"></div>
+                            <div class="comp-row total"><span>總計 TCO</span> <span>$2.6B</span></div>
+                        </div>
+                    </div>
+                    <div class="comp-card highlighted">
+                        <div class="comp-label">太空 AI 陣列 (100k GPU)</div>
+                        <div class="comp-rows">
+                            <div class="comp-row"><span>電力 (每年)</span> <span class="green">$0</span></div>
+                            <div class="comp-row"><span>發射與部署</span> <span class="red">$12B</span></div>
+                            <div class="comp-row"><span>抗輻射硬體</span> <span class="red">$8B</span></div>
+                            <div class="comp-divider"></div>
+                            <div class="comp-row total"><span>總計 TCO</span> <span class="red">$20B</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech-hurdles">
+            <h2 class="section-title text-center">技術落地的三大高牆</h2>
+            <div class="hurdle-grid">
+                <div class="hurdle-item">
+                    <div class="num">01</div>
+                    <div class="text">
+                        <h4>熱力學第二定律的挑戰</h4>
+                        <p>在太空中，「熱」比「冷」更難處理。AI 高負載運作產生的熱能若無法有效釋放，晶片將在數秒內損毀。</p>
+                    </div>
+                </div>
+                <div class="hurdle-item">
+                    <div class="num">02</div>
+                    <div class="text">
+                        <h4>宇宙射線引發的軟錯誤</h4>
+                        <p>每一分鐘都有數以萬計的高能粒子擊中晶片，導致計算錯誤。這需要極其複雜的 ECC 糾錯，犧牲 30% 以上的算力。</p>
+                    </div>
+                </div>
+                <div class="hurdle-item">
+                    <div class="num">03</div>
+                    <div class="text">
+                        <h4>凱斯勒現象 (Kessler Syndrome)</h4>
+                        <p>百萬顆衛星在軌道，大幅增加碰撞風險。一旦連鎖碰撞發生，該軌道將數十年內無法使用。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 OrbitalAI Analysis Report. 本網頁由 Antigravity AI 生成。</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
