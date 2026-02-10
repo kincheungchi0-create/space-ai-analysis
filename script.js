@@ -31,26 +31,24 @@ document.addEventListener('DOMContentLoaded', () => {
         starsContainer.appendChild(star);
     }
 
-    // Chart.js Visualization
+    // Chart.js Visualization (Comparison Analysis)
     const ctx = document.getElementById('costChart').getContext('2d');
     new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['發射成本', '硬體溢價', '能源(0)', '散熱與維護', '通訊延遲處理'],
+            labels: ['1次性發射成本', '硬體固定成本 (5年)', '地表 5年電費', '運維費用 (5年)'],
             datasets: [{
-                label: '預估年化成本 (十億美金)',
-                data: [800, 1200, 0, 500, 200],
+                label: '5年預計支出 (十億美金)',
+                data: [1, 4, 5, 0.5],
                 backgroundColor: [
                     'rgba(59, 130, 246, 0.6)',
-                    'rgba(99, 102, 241, 0.6)',
-                    'rgba(16, 185, 129, 0.6)',
+                    'rgba(148, 163, 184, 0.6)',
                     'rgba(239, 68, 68, 0.6)',
                     'rgba(245, 158, 11, 0.6)'
                 ],
                 borderColor: [
                     '#3b82f6',
-                    '#6366f1',
-                    '#10b981',
+                    '#94a3b8',
                     '#ef4444',
                     '#f59e0b'
                 ],
@@ -93,8 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
         type: 'doughnut',
         data: {
             datasets: [{
-                data: [18, 82],
-                backgroundColor: ['#ef4444', 'rgba(255,255,255,0.05)'],
+                data: [75, 25],
+                backgroundColor: ['#10b981', 'rgba(255,255,255,0.05)'],
                 borderWidth: 0,
                 circumference: 180,
                 rotation: 270,
