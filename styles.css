@@ -863,7 +863,18 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive */
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .grid-2,
+    .dashboard-grid {
+        gap: 2rem;
+    }
+}
+
 @media (max-width: 968px) {
     #hero {
         grid-template-columns: 1fr;
@@ -881,14 +892,120 @@ footer {
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
-    .grid-2 {
+    .grid-2,
+    .dashboard-grid,
+    .tco-grid {
         grid-template-columns: 1fr;
     }
 
     .cta-group {
         justify-content: center;
+    }
+
+    .content-wrapper {
+        padding: 2rem 1rem;
+    }
+
+    section {
+        padding: 4rem 1rem;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    /* Hide nav on mobile for simplicity, or could use hamburger */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .cost-stat,
+    .ms-value,
+    .impact-stat .value {
+        font-size: 2.2rem;
+    }
+
+    .gauge-wrapper {
+        width: 200px;
+        height: 120px;
+    }
+
+    .gauge-value span {
+        font-size: 1.8rem;
+    }
+
+    .finance-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .finance-table {
+        min-width: 500px;
+    }
+
+    .insurance-stat {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ins-circle {
+        margin-bottom: 1rem;
+    }
+
+    .detail-item {
+        padding: 1.5rem;
+    }
+
+    .impact-stat {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+    }
+
+    .cta-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .glass-section {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .detail-grid {
+        gap: 1.5rem;
+    }
+
+    .latency-grid {
+        grid-template-columns: 1fr;
     }
 }
